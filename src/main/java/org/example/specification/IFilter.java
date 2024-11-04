@@ -5,5 +5,5 @@ import java.util.stream.Stream;
 
 public interface IFilter<T> {
 
-    Stream<T> filter(List<T> items, Specification specification);
+    Stream<T> filter(List<T> items, Specification<T> specification);
 }
