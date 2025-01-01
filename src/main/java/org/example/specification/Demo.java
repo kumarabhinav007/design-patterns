@@ -11,17 +11,17 @@ public class Demo {
         List<Product> products = List.of(apple, tree, house);
 
 
-        Filter bf = new Filter();
-        System.out.println("Green products (new):");
-        bf.filter(products, new ColourSpecification(Colour.GREEN))
+        Filter filter = new Filter();
+        System.out.println("Green products:");
+        filter.filter(products, new ColourSpecification(Colour.GREEN))
                 .forEach(p -> System.out.println(" - " + p.name + " is green"));
 
         System.out.println("Large products:");
-        bf.filter(products, new SizeSpecification(Size.LARGE))
+        filter.filter(products, new SizeSpecification(Size.LARGE))
                 .forEach(p -> System.out.println(" - " + p.name + " is large"));
 
         System.out.println("Large blue items:");
-        bf.filter(products,
+        filter.filter(products,
                         new AndSpecification<>(
                                 new ColourSpecification(Colour.BLUE),
                                 new SizeSpecification(Size.LARGE)
