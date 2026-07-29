@@ -1,4 +1,4 @@
-package org.example.specification;
+package org.design.pattern.specification;
 
 import java.util.List;
 

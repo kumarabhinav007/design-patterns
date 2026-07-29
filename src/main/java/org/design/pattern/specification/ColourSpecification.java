@@ -1,4 +1,4 @@
-package org.example.specification;
+package org.design.pattern.specification;
 
 public class ColourSpecification implements Specification<Product> {
 

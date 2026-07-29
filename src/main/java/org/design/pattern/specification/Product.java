@@ -1,4 +1,4 @@
-package org.example.specification;
+package org.design.pattern.specification;
 
 public class Product {
     public String name;

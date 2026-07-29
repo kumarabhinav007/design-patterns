@@ -1,4 +1,4 @@
-package org.example.specification;
+package org.design.pattern.specification;
 
 class AndSpecification<T> implements Specification<T>
 {
